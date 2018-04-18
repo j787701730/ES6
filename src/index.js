@@ -55,14 +55,28 @@
 
 // rest ... (剩余)
 
-function world(first, ...arg) {
-  console.log(arg.length); // 5
-  arg.forEach(element => {
-    console.log(element);
-  });
-  for (const iterator of arg) {
-    console.log(iterator);
-  }
-}
+// function world(first, ...arg) {
+//   console.log(arg.length); // 5
+//   arg.forEach(element => {
+//     console.log(element);
+//   });
+//   for (const iterator of arg) {
+//     console.log(iterator);
+//   }
+// }
 
-world(0, 1, 2, 3, 4, 5);
+// world(0, 1, 2, 3, 4, 5);
+
+/**
+ * 4.字符串模板
+ */
+let name = 'huahua';
+let age = 18;
+console.log(`我是<b>${name}</b>,
+年龄${age + 1}`);
+
+console.log(name.includes('h'));
+console.log(name.startsWith('h'));
+console.log(name.endsWith('h'));
+console.log(name.repeat(3));
+
